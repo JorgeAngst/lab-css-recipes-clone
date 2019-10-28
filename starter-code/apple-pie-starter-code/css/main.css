@@ -7,27 +7,79 @@
 
 body {
   font-family: 'Roboto';
-
 }
 
 .hero {
   background-image: url("../images/apple-pie.jpg");
   background-size: cover;
-  height: 900px;
+  background-position: center;
+  height: 400px;
 }
 
 h1 {
   color: white;
   text-align: center;
-  padding: 400px 0;
-  font-size: 7em;
+  padding: 150px 0;
+  font-size: 3em;
+  font-weight: 400;
 }
 
-#cooking-info p {
- margin: 50px 200px;
+#recipe-info p {
+  margin: 50px 50px 25px;
+  text-align: justify;
 }
 
-#cooking-info img {
-  margin: 0 auto;
+#recipe-info .recipe {
+  text-align: center;
 }
 
+#recipe-info img {
+  width: 300px;
+  display: inline-block;
+}
+
+hr {
+margin: 0px 50px;
+}
+
+h3 {
+  margin: 30px 50px 20px;
+  font-weight: 400;
+}
+
+#ingredients ul {
+  margin: 0 60px;
+}
+
+#ingredients li {
+  list-style-type: none;
+}
+
+#ingredients .recipe {
+  text-align: center;
+}
+
+#ingredients img {
+  width: 250px;
+  display: inline-block;
+  margin: 30px 0 20px;
+} 
+
+#directions {
+  margin-bottom: 100px;
+} 
+
+#directions ol {
+  margin: 0 60px;
+  text-align: justify;
+  counter-reset: list;
+}
+
+#directions ol > li {
+  list-style: none;
+}
+
+#directions ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}
